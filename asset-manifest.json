@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Itop/static/css/main.c7f0f2fb.css",
+    "main.js": "/Itop/static/js/main.9b7fd8e4.js",
+    "static/js/787.72cb6a1e.chunk.js": "/Itop/static/js/787.72cb6a1e.chunk.js",
+    "static/media/logo.svg": "/Itop/static/media/logo.b7a0b5d6f9f046a55033da4307447159.svg",
+    "index.html": "/Itop/index.html",
+    "main.c7f0f2fb.css.map": "/Itop/static/css/main.c7f0f2fb.css.map",
+    "main.9b7fd8e4.js.map": "/Itop/static/js/main.9b7fd8e4.js.map",
+    "787.72cb6a1e.chunk.js.map": "/Itop/static/js/787.72cb6a1e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7f0f2fb.css",
+    "static/js/main.9b7fd8e4.js"
+  ]
+}
