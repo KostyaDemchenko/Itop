@@ -17,8 +17,12 @@ h1, h2, p{
     max-width: 32px;
   }
 
+  .header{
+    padding: 10px 5px;
+  }
+
   .logo-container {
-    max-width: 210px;
+    max-width: 200px;
   }
 
   .exchange-rate-container{
