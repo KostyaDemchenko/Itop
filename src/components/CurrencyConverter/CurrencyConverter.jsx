@@ -2,10 +2,10 @@ import { useState } from "react";
 import './CurrencyConverter.css';
 
 function CurrencyConverter() {
-  const [amount, setAmount] = useState(1);
+  const [conversionRate, setConversionRate] = useState(null);
   const [currencyFrom, setCurrencyFrom] = useState("UAH");
   const [currencyTo, setCurrencyTo] = useState("USD");
-  const [conversionRate, setConversionRate] = useState(null);
+  const [amount, setAmount] = useState(1);
 
   const handleAmountChange = (event) => {
     setAmount(parseFloat(event.target.value));
@@ -41,9 +41,9 @@ function CurrencyConverter() {
             value={currencyFrom}
             onChange={handleCurrencyFromChange}
           >
-            <option value='UAH'>UAH</option>
-            <option value='USD'>USD</option>
-            <option value='EUR'>EUR</option>
+            <option value='UAH'>₴ UAH</option>
+            <option value='USD'>$ USD</option>
+            <option value='EUR'>€ EUR</option>
           </select>
         </div>
         <div className='form-group'>
@@ -53,26 +53,29 @@ function CurrencyConverter() {
             value={currencyTo}
             onChange={handleCurrencyToChange}
           >
-            <option value='UAH'>UAH</option>
-            <option value='USD'>USD</option>
-            <option value='EUR'>EUR</option>
+            <option value='UAH'>₴ UAH</option>
+            <option value='USD'>$ USD</option>
+            <option value='EUR'>€ EUR</option>
           </select>
         </div>
       </div>
       <div className='output-container'>
         <div className="input-container">
           <label htmlFor='amount'>Amount:</label>
-          <input
-            type='number'
-            id='amount'
-            value={amount}
-            onChange={handleAmountChange}
-          />
+          <div className="curency-container">
+            <input
+              type='number'
+              id='amount'
+              value={amount}
+              onChange={handleAmountChange}
+            />
+            <p>
+              {currencyFrom}
+            </p>
+          </div>
         </div>
         {conversionRate && (
-        <p className="results">
-          {amount} {currencyFrom} = {convertedAmount.toFixed(2)} {currencyTo}
-        </p>
+        <p className="results"> {convertedAmount.toFixed(2)} {currencyTo} </p>
         )}
       </div>
       <button onClick={handleConvert}>Convert</button>

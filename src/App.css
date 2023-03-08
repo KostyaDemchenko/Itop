@@ -31,8 +31,9 @@ h1, h2, p{
   }
 
   .currency-converter{
-    padding: 5px;
-    max-width: 355px;
+    padding: 7px;
+    max-width: 350px;
+    margin-top: 15px;
   }
 
   .sub-title{

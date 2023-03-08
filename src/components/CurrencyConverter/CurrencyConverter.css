@@ -44,13 +44,27 @@ input, select{
     font-size: 18px;
 }
 
+.input-container{
+    display: flex;
+}
+
+.input-container input{
+    max-width: 60px;
+    border-bottom: none;
+}
+
+.curency-container{
+    display: flex;
+    border-bottom: 1px solid #6d6d6d;
+}
+
 .results{
-    border-bottom: 1px solid #404040;
+    border-bottom: 1px solid #6d6d6d;
 }
 
 button{
     padding: 10px 20px;
-    margin-top: 15px;
+    margin-top: 30px;
     border-radius: 0;
     border: none;
     font-family: 'Poppins', sans-serif;
